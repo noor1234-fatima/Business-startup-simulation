@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — StartupSim</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">SS</span>
+        <span class="logo-text">Startup<span class="accent">Sim</span></span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="ideas.html">Ideas</a>
+        <a href="simulator.html" class="btn-ghost">Simulator</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container contact">
+      <h1>Contact Us</h1>
+      <p class="lead">Questions, feedback, or demo requests — send us a message.</p>
+
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form">
+          <label>Name <input type="text" id="cname" required /></label>
+          <label>Email <input type="email" id="cemail" required /></label>
+          <label>Message <textarea id="cmessage" rows="6" required></textarea></label>
+          <div class="contact-actions">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="button" id="clearContact" class="btn btn-ghost">Clear</button>
+          </div>
+          <div id="contactMsg" class="form-msg"></div>
+        </form>
+
+        <div class="contact-info">
+          <h3>Campus</h3>
+          <p>National University of Computer & Emerging Sciences — Faisalabad Chiniot Campus</p>
+          <h3>Office Hours</h3>
+          <p>Mon–Fri: 9:00 — 17:00</p>
+          <h3>Follow</h3>
+          <p>Instagram / LinkedIn / Facebook (fake links for demo)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>StartupSim</strong>
+        <p>Creative startup simulation for students — build, learn, and iterate.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <a href="simulator.html">Simulator</a>
+        <a href="ideas.html">Ideas</a>
+        <a href="about.html">About</a>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>Faisalabad - Chiniot Campus</p>
+        <p><a href="contact.html">Contact Form</a></p>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year5"></span> StartupSim — National University</div>
+  </footer>
+</body>
+</html>

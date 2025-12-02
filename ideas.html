@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ideas — Startup Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- header (same as index) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">SS</span>
+        <span class="logo-text">Startup<span class="accent">Sim</span></span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="ideas.html" class="active">Ideas</a>
+        <a href="simulator.html" class="btn-ghost">Simulator</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container ideas-hero">
+      <h1>Creative Startup Ideas</h1>
+      <p class="lead">Handpicked, combinable prompts to spark your next project or final-year startup.</p>
+      <div class="filters">
+        <button data-filter="all" class="chip active">All</button>
+        <button data-filter="tech" class="chip">Tech</button>
+        <button data-filter="service" class="chip">Service</button>
+        <button data-filter="low" class="chip">Low-budget</button>
+        <button data-filter="edu" class="chip">Education</button>
+      </div>
+
+      <div class="ideas-grid" id="ideasGrid">
+        <!-- sample idea cards -->
+        <article class="idea-card" data-tags="tech,low">
+          <h3>Micro-learning for Homework</h3>
+          <p>Short video lessons for high-school students focused on exam tricks.</p>
+          <div class="meta">
+            <span class="tag">Education</span>
+            <button class="btn btn-small save-idea">Save</button>
+            <a href="simulator.html" class="btn-link">Simulate</a>
+          </div>
+        </article>
+
+        <article class="idea-card" data-tags="service,low">
+          <h3>Mobile Bike Repair on Demand</h3>
+          <p>Mechanics dispatched via app to repair cycles in neighborhoods.</p>
+          <div class="meta">
+            <span class="tag">Local Service</span>
+            <button class="btn btn-small save-idea">Save</button>
+            <a href="simulator.html" class="btn-link">Simulate</a>
+          </div>
+        </article>
+
+        <article class="idea-card" data-tags="tech">
+          <h3>AR Menu for Cafes</h3>
+          <p>Augmented reality previews of dishes to increase conversion.</p>
+          <div class="meta">
+            <span class="tag">Tech</span>
+            <button class="btn btn-small save-idea">Save</button>
+            <a href="simulator.html" class="btn-link">Simulate</a>
+          </div>
+        </article>
+
+        <article class="idea-card" data-tags="service,edu">
+          <h3>Startup Bootcamp for Teens</h3>
+          <p>Weekend design-thinking workshops with mini-pitches & prizes.</p>
+          <div class="meta">
+            <span class="tag">Education</span>
+            <button class="btn btn-small save-idea">Save</button>
+            <a href="simulator.html" class="btn-link">Simulate</a>
+          </div>
+        </article>
+
+        <!-- add more cards as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>StartupSim</strong>
+        <p>Creative startup simulation for students — build, learn, and iterate.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <a href="simulator.html">Simulator</a>
+        <a href="ideas.html">Ideas</a>
+        <a href="about.html">About</a>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>Faisalabad - Chiniot Campus</p>
+        <p><a href="contact.html">Contact Form</a></p>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year2"></span> StartupSim — National University</div>
+  </footer>
+</body>
+</html>
